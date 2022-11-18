@@ -63,7 +63,7 @@ export default function Product() {
 
       <Caracteristicas product={selectedProduct}/>
 
-      <CalendarioProduto />
+      <CalendarioProduto product={selectedProduct} />
 
       <Politicas  />
       

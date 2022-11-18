@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6{
     }
 } */
 
-@media(min-width: 769px) and (max-width: 1024px){
+@media(min-width: 769px) and (max-width: 1023px){
 
     /* Bloco de pesquisa */
     .second_header{
@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6{
         overflow-x: hidden;
     }
 
+
     /* Seção de Categorias */
     .category_img{
         /* width: 45vw; */
@@ -241,10 +242,17 @@ h1, h2, h3, h4, h5, h6{
         overflow-y: hidden;
         overflow-x: hidden;
     }
+    
+
+    .card_category{
+        min-height: 15vh;
+        height: auto;
+    }
 
     /* Seção de Recomendações */
     .card_main{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         /* width: 85vw; */
@@ -254,19 +262,26 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .card_description{
-        width: 20vw;
+        width: 30vw;
+        height: fit-content;
+    }
+    
+    .car_description{
+        height: fit-content;
     }
 
     .card_image{
+        width: auto;
         overflow-y: hidden;
     }
 
     .card_image img{
-        max-width: 55vw;
+        max-width: 40vw;
         max-height: 30vh;
         width: auto;
         height: auto;
     }
+
 
 }
 
@@ -339,7 +354,7 @@ h1, h2, h3, h4, h5, h6{
         align-items: center;
         justify-content: space-around;
         width: 95vw;
-        height: 40vh;
+        height: fit-content;
         overflow-x: hidden;
     }
 
@@ -348,19 +363,24 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .card_image img{
-        max-width: 55vw;
-        max-height: 30vh;
+        max-width: 48vw;
+        max-height: 25vh;
         width: auto;
         height: auto;
     }
+    .card_description {
+        width: 40vw;
+        margin: 0;
+    }
 
     .car_description{
-        width: 53vw;
-        margin: 0;
+        width: 100%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 16px;
     }
 
     .car_description p{
@@ -391,7 +411,13 @@ h1, h2, h3, h4, h5, h6{
     }
     
     .btn_header{
-        width: 20vw;
+        width: fit-content;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .btn_side{
+        width: fit-content;
         margin: 0;
         overflow-x: hidden;
     }
@@ -449,13 +475,21 @@ h1, h2, h3, h4, h5, h6{
         height: auto;
     }
 
+    .card_description{
+        width: 50vw;
+        height: fit-content;
+    }
+
+
     .car_description{
         width: 100%;
+        height: fit-content;
         margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 4px;
     }   
   
 }

@@ -90,10 +90,10 @@ function MainHeader() {
                     <Offcanvas.Body>
                     <ButtonGroup className='md-4 justify-content-end flex-grow-1 pe-3' >
                         <Link to="/login" >
-                            {path !== "/login" ? <Button className='me-3 rounded' variant='outline-success' > Login </Button> : ''}
+                            {path !== "/login" ? <Button className='me-3 rounded btn_side' variant='outline-success' > Login </Button> : ''}
                         </Link>
                         <Link to="/signup">
-                            {path !== "/signup" ? <Button className='me-3 rounded btn' variant='outline-primary' > Cadastre-se </Button> : ''}
+                            {path !== "/signup" ? <Button className='me-3 rounded btn_side' variant='outline-primary' > Cadastre-se </Button> : ''}
                         </Link>
                     </ButtonGroup>
                     </Offcanvas.Body>

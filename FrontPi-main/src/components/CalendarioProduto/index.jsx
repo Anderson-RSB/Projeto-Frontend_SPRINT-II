@@ -1,15 +1,18 @@
-// import { Context } from "../Context/Context";
-// import React, { useContext, useState } from "react";
-// import { Link, useParams } from "react-router-dom";
-import './style.css'
-import { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from "react";
+import { Context } from "../../Context/Context";
+
+import { Link, useParams } from "react-router-dom";
+
 import { DateRange } from 'react-date-range';
+import * as locales from 'react-date-range/dist/locale';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme
-import * as locales from 'react-date-range/dist/locale';
+
 import { addDays, differenceInDays } from 'date-fns'
 
-export default function CalendarioProduto(){
+import './style.css'
+
+export default function CalendarioProduto({product}){
 
     const [state, setState] = useState([
         {
@@ -68,7 +71,10 @@ export default function CalendarioProduto(){
                                     <h4>{rent} Dias x $300,00 = {result},00</h4>
                                     <span>Valor da diária é $300,00</span>
                                 </div>
-                                <button className='reserva-btn'>Alugue  Agora</button>
+                                <Link to={'/reservation/' + product.id } className="link_button">
+                                    <button className='reserva-btn'>Alugue  Agora</button>
+                                </Link>
+                                
                             </div>
                         </div> 
                 </div>
